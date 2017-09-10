@@ -1,14 +1,11 @@
 //
-//  StyleClasses.pch
+//  NSException+ExceptionNames.m
 //  StyleClasses
 //
 //  Created by Aleksey Zgurskiy on 10.09.17.
 //  Copyright © 2017 Aleksey Zgurskiy. All rights reserved.
 //
 
-#ifndef StyleClasses_pch
-#define StyleClasses_pch
-
 #import "NSException+ExceptionNames.h"
 
-#endif /* StyleClasses_pch */
+NSExceptionName const NSFileNotFoundException = @"NSFileNotFoundException";

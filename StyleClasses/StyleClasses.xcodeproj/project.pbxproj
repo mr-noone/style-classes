@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
+		5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */; };
 		5B6D86F01F6411FE0069B389 /* StyleClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6D86E61F6411FE0069B389 /* StyleClasses.framework */; };
 		5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D86E91F6411FE0069B389 /* StyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -22,6 +24,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
+		5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+ExceptionNames.m"; sourceTree = "<group>"; };
 		5B643E481F65A62200D2F8FE /* StyleClasses.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.pch; sourceTree = "<group>"; };
 		5B6D86E61F6411FE0069B389 /* StyleClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D86E91F6411FE0069B389 /* StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.h; sourceTree = "<group>"; };
@@ -49,6 +53,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B643E411F65A47C00D2F8FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B643E431F65A48C00D2F8FE /* NSFoundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B643E431F65A48C00D2F8FE /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */,
+				5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */,
+			);
+			path = NSFoundation;
+			sourceTree = "<group>";
+		};
 		5B6D86DC1F6411FE0069B389 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
+				5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +232,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
