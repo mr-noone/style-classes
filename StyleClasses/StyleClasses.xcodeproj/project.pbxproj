@@ -22,6 +22,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B643E481F65A62200D2F8FE /* StyleClasses.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.pch; sourceTree = "<group>"; };
 		5B6D86E61F6411FE0069B389 /* StyleClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D86E91F6411FE0069B389 /* StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.h; sourceTree = "<group>"; };
 		5B6D86EA1F6411FE0069B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -86,6 +87,7 @@
 		5B6D87001F6412130069B389 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B643E481F65A62200D2F8FE /* StyleClasses.pch */,
 				5B6D86EA1F6411FE0069B389 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -349,6 +351,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClasses/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -370,6 +374,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClasses/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -386,6 +392,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Z2AMFMF3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClassesTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.StyleClassesTests";
@@ -399,6 +407,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Z2AMFMF3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClassesTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.StyleClassesTests";
