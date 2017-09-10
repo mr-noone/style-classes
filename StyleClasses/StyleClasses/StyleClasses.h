@@ -10,3 +10,5 @@
 
 FOUNDATION_EXPORT double StyleClassesVersionNumber;
 FOUNDATION_EXPORT const unsigned char StyleClassesVersionString[];
+
+#import <StyleClasses/SCStyleClasses.h>
