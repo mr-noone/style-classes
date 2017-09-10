@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
+		5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */; };
 		5B6D86F01F6411FE0069B389 /* StyleClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6D86E61F6411FE0069B389 /* StyleClasses.framework */; };
-		5B6D86F51F6411FE0069B389 /* StyleClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D86F41F6411FE0069B389 /* StyleClassesTests.m */; };
 		5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D86E91F6411FE0069B389 /* StyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D87041F65917B0069B389 /* SCStyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87051F65917B0069B389 /* SCStyleClasses.m */; };
+		5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -23,12 +27,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
+		5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+ExceptionNames.m"; sourceTree = "<group>"; };
+		5B643E481F65A62200D2F8FE /* StyleClasses.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.pch; sourceTree = "<group>"; };
 		5B6D86E61F6411FE0069B389 /* StyleClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D86E91F6411FE0069B389 /* StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.h; sourceTree = "<group>"; };
 		5B6D86EA1F6411FE0069B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B6D86EF1F6411FE0069B389 /* StyleClassesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StyleClassesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B6D86F41F6411FE0069B389 /* StyleClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StyleClassesTests.m; sourceTree = "<group>"; };
 		5B6D86F61F6411FE0069B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5B6D87041F65917B0069B389 /* SCStyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClasses.h; sourceTree = "<group>"; };
+		5B6D87051F65917B0069B389 /* SCStyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClasses.m; sourceTree = "<group>"; };
+		5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClassesTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +59,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B643E411F65A47C00D2F8FE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B643E431F65A48C00D2F8FE /* NSFoundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B643E431F65A48C00D2F8FE /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */,
+				5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */,
+			);
+			path = NSFoundation;
+			sourceTree = "<group>";
+		};
 		5B6D86DC1F6411FE0069B389 = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +98,9 @@
 			isa = PBXGroup;
 			children = (
 				5B6D86E91F6411FE0069B389 /* StyleClasses.h */,
+				5B6D87041F65917B0069B389 /* SCStyleClasses.h */,
+				5B6D87051F65917B0069B389 /* SCStyleClasses.m */,
+				5B643E411F65A47C00D2F8FE /* Extensions */,
 				5B6D87001F6412130069B389 /* Supporting Files */,
 			);
 			path = StyleClasses;
@@ -80,7 +109,7 @@
 		5B6D86F31F6411FE0069B389 /* StyleClassesTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B6D86F41F6411FE0069B389 /* StyleClassesTests.m */,
+				5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */,
 				5B6D87011F6412880069B389 /* Supporting Files */,
 			);
 			path = StyleClassesTests;
@@ -89,6 +118,7 @@
 		5B6D87001F6412130069B389 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				5B643E481F65A62200D2F8FE /* StyleClasses.pch */,
 				5B6D86EA1F6411FE0069B389 /* Info.plist */,
 			);
 			path = "Supporting Files";
@@ -110,6 +140,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
+				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
+				5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,6 +190,7 @@
 		5B6D86DD1F6411FE0069B389 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = SC;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Aleksey Zgurskiy";
 				TargetAttributes = {
@@ -211,6 +244,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
+				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +253,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B6D86F51F6411FE0069B389 /* StyleClassesTests.m in Sources */,
+				5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +388,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClasses/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -374,6 +411,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClasses/Supporting Files/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -390,6 +429,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Z2AMFMF3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClassesTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.StyleClassesTests";
@@ -403,6 +444,8 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 84Z2AMFMF3;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "StyleClasses/Supporting Files/StyleClasses.pch";
 				INFOPLIST_FILE = "StyleClassesTests/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.mr-noone.StyleClassesTests";
