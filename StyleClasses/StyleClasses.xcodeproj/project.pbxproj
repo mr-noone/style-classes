@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */; };
+		5B32D7151F6DBE7000B0ACA1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B32D7141F6DBE3A00B0ACA1 /* image.png */; };
 		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
 		5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */; };
+		5B6A3DA61F65AD4C00E2BA6C /* SCStyle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6A3DA41F65AD4C00E2BA6C /* SCStyle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B6A3DA71F65AD4C00E2BA6C /* SCStyle.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3DA51F65AD4C00E2BA6C /* SCStyle.m */; };
+		5B6A3DA91F65AD8200E2BA6C /* SCStyleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6A3DA81F65AD8200E2BA6C /* SCStyleTests.m */; };
 		5B6D86F01F6411FE0069B389 /* StyleClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6D86E61F6411FE0069B389 /* StyleClasses.framework */; };
 		5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D86E91F6411FE0069B389 /* StyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D87041F65917B0069B389 /* SCStyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -41,9 +45,13 @@
 
 /* Begin PBXFileReference section */
 		5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GeometryTests.m"; sourceTree = "<group>"; };
+		5B32D7141F6DBE3A00B0ACA1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
 		5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+ExceptionNames.m"; sourceTree = "<group>"; };
 		5B643E481F65A62200D2F8FE /* StyleClasses.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.pch; sourceTree = "<group>"; };
+		5B6A3DA41F65AD4C00E2BA6C /* SCStyle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyle.h; sourceTree = "<group>"; };
+		5B6A3DA51F65AD4C00E2BA6C /* SCStyle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyle.m; sourceTree = "<group>"; };
+		5B6A3DA81F65AD8200E2BA6C /* SCStyleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleTests.m; sourceTree = "<group>"; };
 		5B6D86E61F6411FE0069B389 /* StyleClasses.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = StyleClasses.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B6D86E91F6411FE0069B389 /* StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.h; sourceTree = "<group>"; };
 		5B6D86EA1F6411FE0069B389 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,6 +110,14 @@
 			path = NSFoundation;
 			sourceTree = "<group>";
 		};
+		5B32D7131F6DBDA500B0ACA1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5B32D7141F6DBE3A00B0ACA1 /* image.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		5B643E411F65A47C00D2F8FE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +148,7 @@
 				5B6D86E71F6411FE0069B389 /* Products */,
 			);
 			sourceTree = "<group>";
+			usesTabs = 0;
 		};
 		5B6D86E71F6411FE0069B389 /* Products */ = {
 			isa = PBXGroup;
@@ -148,6 +165,8 @@
 				5B6D86E91F6411FE0069B389 /* StyleClasses.h */,
 				5B6D87041F65917B0069B389 /* SCStyleClasses.h */,
 				5B6D87051F65917B0069B389 /* SCStyleClasses.m */,
+				5B6A3DA41F65AD4C00E2BA6C /* SCStyle.h */,
+				5B6A3DA51F65AD4C00E2BA6C /* SCStyle.m */,
 				5B643E411F65A47C00D2F8FE /* Extensions */,
 				5B6D87001F6412130069B389 /* Supporting Files */,
 			);
@@ -158,7 +177,9 @@
 			isa = PBXGroup;
 			children = (
 				5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */,
+				5B6A3DA81F65AD8200E2BA6C /* SCStyleTests.m */,
 				5B32D70F1F6D9B9900B0ACA1 /* Extensions */,
+				5B32D7131F6DBDA500B0ACA1 /* Resources */,
 				5B6D87011F6412880069B389 /* Supporting Files */,
 			);
 			path = StyleClassesTests;
@@ -212,6 +233,7 @@
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
+				5B6A3DA61F65AD4C00E2BA6C /* SCStyle.h in Headers */,
 				5BF7AC381F6DE7C500A702FE /* UIColor+HexString.h in Headers */,
 				5BF7AC441F6DE9D700A702FE /* NSCharacterSet+HEX.h in Headers */,
 				5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */,
@@ -310,6 +332,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5B32D7151F6DBE7000B0ACA1 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +348,7 @@
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
+				5B6A3DA71F65AD4C00E2BA6C /* SCStyle.m in Sources */,
 				5BF7AC331F6DE01E00A702FE /* UIFont+String.m in Sources */,
 				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
 			);
@@ -337,6 +361,7 @@
 				5BF7AC3B1F6DE7DA00A702FE /* UIColor+HexStringTests.m in Sources */,
 				5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */,
 				5BF7AC351F6DE03A00A702FE /* UIFont+StringTests.m in Sources */,
+				5B6A3DA91F65AD8200E2BA6C /* SCStyleTests.m in Sources */,
 				5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
