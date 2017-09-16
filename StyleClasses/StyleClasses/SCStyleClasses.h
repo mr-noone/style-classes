@@ -10,9 +10,9 @@
 
 @interface SCStyleClasses : NSObject
 
-+ (nullable instancetype)new __attribute__((unavailable("use 'instance' instead")));
-+ (nullable instancetype)alloc __attribute__((unavailable("use 'instance' instead")));
-- (nullable instancetype)init __attribute__((unavailable("use 'instance' instead")));
++ (nonnull instancetype)new __attribute__((unavailable("use 'instance' instead")));
++ (nonnull instancetype)alloc __attribute__((unavailable("use 'instance' instead")));
+- (nonnull instancetype)init __attribute__((unavailable("use 'instance' instead")));
 
 @property (nonatomic, class, readonly, nonnull) SCStyleClasses *instance;
 
