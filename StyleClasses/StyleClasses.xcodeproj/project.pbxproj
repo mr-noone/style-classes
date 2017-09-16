@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */; };
 		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
 		5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */; };
 		5B6D86F01F6411FE0069B389 /* StyleClasses.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B6D86E61F6411FE0069B389 /* StyleClasses.framework */; };
@@ -14,6 +15,8 @@
 		5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D87041F65917B0069B389 /* SCStyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87051F65917B0069B389 /* SCStyleClasses.m */; };
 		5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */; };
+		5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */; };
+		5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GeometryTests.m"; sourceTree = "<group>"; };
 		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
 		5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+ExceptionNames.m"; sourceTree = "<group>"; };
 		5B643E481F65A62200D2F8FE /* StyleClasses.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StyleClasses.pch; sourceTree = "<group>"; };
@@ -38,6 +42,8 @@
 		5B6D87041F65917B0069B389 /* SCStyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClasses.h; sourceTree = "<group>"; };
 		5B6D87051F65917B0069B389 /* SCStyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClasses.m; sourceTree = "<group>"; };
 		5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClassesTests.m; sourceTree = "<group>"; };
+		5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Geometry.h"; sourceTree = "<group>"; };
+		5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Geometry.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +65,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B32D70F1F6D9B9900B0ACA1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				5B32D7101F6D9BA200B0ACA1 /* NSFoundation */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		5B32D7101F6D9BA200B0ACA1 /* NSFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */,
+			);
+			path = NSFoundation;
+			sourceTree = "<group>";
+		};
 		5B643E411F65A47C00D2F8FE /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -72,6 +94,8 @@
 			children = (
 				5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */,
 				5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */,
+				5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */,
+				5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */,
 			);
 			path = NSFoundation;
 			sourceTree = "<group>";
@@ -110,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */,
+				5B32D70F1F6D9B9900B0ACA1 /* Extensions */,
 				5B6D87011F6412880069B389 /* Supporting Files */,
 			);
 			path = StyleClassesTests;
@@ -141,6 +166,7 @@
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
+				5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */,
 				5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -245,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
+				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */,
+				5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
