@@ -36,7 +36,7 @@
     [super tearDown];
 }
 
-- (void)testStyleInit {
+- (void)testInit {
     XCTAssertNotNil([[SCStyle alloc] initWithStyleClass:@""
                                     withStyleProperties:@{}
                                              withBundle:NSBundle.mainBundle]);
