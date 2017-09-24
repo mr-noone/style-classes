@@ -29,6 +29,9 @@
 		5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC3D1F6DE7F500A702FE /* UIColor+Compare.m */; };
 		5BF7AC441F6DE9D700A702FE /* NSCharacterSet+HEX.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF7AC421F6DE9D700A702FE /* NSCharacterSet+HEX.h */; };
 		5BF7AC451F6DE9D700A702FE /* NSCharacterSet+HEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC431F6DE9D700A702FE /* NSCharacterSet+HEX.m */; };
+		5BF7AC481F6E7A0900A702FE /* SCStylesheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */; };
+		5BF7AC491F6E7A0900A702FE /* SCStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */; };
+		5BF7AC4B1F6E7A2300A702FE /* SCStylesheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC4A1F6E7A2300A702FE /* SCStylesheetTests.m */; };
 		5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */; };
 		5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */; };
 /* End PBXBuildFile section */
@@ -70,6 +73,9 @@
 		5BF7AC3D1F6DE7F500A702FE /* UIColor+Compare.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Compare.m"; sourceTree = "<group>"; };
 		5BF7AC421F6DE9D700A702FE /* NSCharacterSet+HEX.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSCharacterSet+HEX.h"; sourceTree = "<group>"; };
 		5BF7AC431F6DE9D700A702FE /* NSCharacterSet+HEX.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSCharacterSet+HEX.m"; sourceTree = "<group>"; };
+		5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStylesheet.h; sourceTree = "<group>"; };
+		5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStylesheet.m; sourceTree = "<group>"; };
+		5BF7AC4A1F6E7A2300A702FE /* SCStylesheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStylesheetTests.m; sourceTree = "<group>"; };
 		5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Geometry.h"; sourceTree = "<group>"; };
 		5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Geometry.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -165,6 +171,8 @@
 				5B6D86E91F6411FE0069B389 /* StyleClasses.h */,
 				5B6D87041F65917B0069B389 /* SCStyleClasses.h */,
 				5B6D87051F65917B0069B389 /* SCStyleClasses.m */,
+				5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */,
+				5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */,
 				5B6A3DA41F65AD4C00E2BA6C /* SCStyle.h */,
 				5B6A3DA51F65AD4C00E2BA6C /* SCStyle.m */,
 				5B643E411F65A47C00D2F8FE /* Extensions */,
@@ -177,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */,
+				5BF7AC4A1F6E7A2300A702FE /* SCStylesheetTests.m */,
 				5B6A3DA81F65AD8200E2BA6C /* SCStyleTests.m */,
 				5B32D70F1F6D9B9900B0ACA1 /* Extensions */,
 				5B32D7131F6DBDA500B0ACA1 /* Resources */,
@@ -239,6 +248,7 @@
 				5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */,
 				5BF7AC321F6DE01E00A702FE /* UIFont+String.h in Headers */,
 				5BF7AC3E1F6DE7F500A702FE /* UIColor+Compare.h in Headers */,
+				5BF7AC481F6E7A0900A702FE /* SCStylesheet.h in Headers */,
 				5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -344,6 +354,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF7AC391F6DE7C500A702FE /* UIColor+HexString.m in Sources */,
+				5BF7AC491F6E7A0900A702FE /* SCStylesheet.m in Sources */,
 				5BF7AC451F6DE9D700A702FE /* NSCharacterSet+HEX.m in Sources */,
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
@@ -361,6 +372,7 @@
 				5BF7AC3B1F6DE7DA00A702FE /* UIColor+HexStringTests.m in Sources */,
 				5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */,
 				5BF7AC351F6DE03A00A702FE /* UIFont+StringTests.m in Sources */,
+				5BF7AC4B1F6E7A2300A702FE /* SCStylesheetTests.m in Sources */,
 				5B6A3DA91F65AD8200E2BA6C /* SCStyleTests.m in Sources */,
 				5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */,
 			);
