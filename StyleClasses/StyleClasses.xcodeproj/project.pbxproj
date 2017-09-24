@@ -19,6 +19,8 @@
 		5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D87041F65917B0069B389 /* SCStyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87051F65917B0069B389 /* SCStyleClasses.m */; };
 		5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */; };
+		5BB163121F78177000BAC210 /* StyleInvalidFormat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */; };
+		5BB163141F781A2000BAC210 /* StyleInvalidRoot.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */; };
 		5BF7AC321F6DE01E00A702FE /* UIFont+String.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF7AC301F6DE01E00A702FE /* UIFont+String.h */; };
 		5BF7AC331F6DE01E00A702FE /* UIFont+String.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC311F6DE01E00A702FE /* UIFont+String.m */; };
 		5BF7AC351F6DE03A00A702FE /* UIFont+StringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC341F6DE03A00A702FE /* UIFont+StringTests.m */; };
@@ -32,6 +34,7 @@
 		5BF7AC481F6E7A0900A702FE /* SCStylesheet.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */; };
 		5BF7AC491F6E7A0900A702FE /* SCStylesheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */; };
 		5BF7AC4B1F6E7A2300A702FE /* SCStylesheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF7AC4A1F6E7A2300A702FE /* SCStylesheetTests.m */; };
+		5BF7AC4D1F6E811100A702FE /* Style.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BF7AC4C1F6E811100A702FE /* Style.plist */; };
 		5BFE5C7C1F6D9A7200165570 /* NSString+Geometry.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */; };
 		5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */; };
 /* End PBXBuildFile section */
@@ -63,6 +66,8 @@
 		5B6D87041F65917B0069B389 /* SCStyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClasses.h; sourceTree = "<group>"; };
 		5B6D87051F65917B0069B389 /* SCStyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClasses.m; sourceTree = "<group>"; };
 		5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClassesTests.m; sourceTree = "<group>"; };
+		5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = StyleInvalidFormat.plist; sourceTree = "<group>"; };
+		5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StyleInvalidRoot.plist; sourceTree = "<group>"; };
 		5BF7AC301F6DE01E00A702FE /* UIFont+String.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIFont+String.h"; sourceTree = "<group>"; };
 		5BF7AC311F6DE01E00A702FE /* UIFont+String.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+String.m"; sourceTree = "<group>"; };
 		5BF7AC341F6DE03A00A702FE /* UIFont+StringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIFont+StringTests.m"; sourceTree = "<group>"; };
@@ -76,6 +81,7 @@
 		5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStylesheet.h; sourceTree = "<group>"; };
 		5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStylesheet.m; sourceTree = "<group>"; };
 		5BF7AC4A1F6E7A2300A702FE /* SCStylesheetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStylesheetTests.m; sourceTree = "<group>"; };
+		5BF7AC4C1F6E811100A702FE /* Style.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Style.plist; sourceTree = "<group>"; };
 		5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Geometry.h"; sourceTree = "<group>"; };
 		5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Geometry.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -120,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				5B32D7141F6DBE3A00B0ACA1 /* image.png */,
+				5BF7AC4C1F6E811100A702FE /* Style.plist */,
+				5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */,
+				5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -342,6 +351,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BB163141F781A2000BAC210 /* StyleInvalidRoot.plist in Resources */,
+				5BF7AC4D1F6E811100A702FE /* Style.plist in Resources */,
+				5BB163121F78177000BAC210 /* StyleInvalidFormat.plist in Resources */,
 				5B32D7151F6DBE7000B0ACA1 /* image.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
