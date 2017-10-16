@@ -19,57 +19,55 @@
 - (void)testColorFromHexRGB {
     UIColor *hexColor = [UIColor colorWithHexString:@"#a2b"];
     UIColor *color = [UIColor colorWithRed:0.67 green:0.13 blue:0.73 alpha:1.0];
-    
-    XCTAssertTrue([hexColor isEqualToColor:color], @"RGB Colors should be equal!");
+    XCTAssertTrue([hexColor isEqualToColor:color], @"RGB Colors should be equal.");
 }
 
 - (void)testColorFromHexARGB {
     UIColor *hexColor = [UIColor colorWithHexString:@"#47ab"];
     UIColor *color = [UIColor colorWithRed:0.47 green:0.67 blue:0.73 alpha:0.27];
-    
-    XCTAssertTrue([hexColor isEqualToColor:color], @"ARGB Colors should be equal!");
+    XCTAssertTrue([hexColor isEqualToColor:color], @"ARGB Colors should be equal.");
 }
 
 - (void)testColorFromHexRRGGBB {
     UIColor *hexColor = [UIColor colorWithHexString:@"#77aabb"];
     UIColor *color = [UIColor colorWithRed:0.47 green:0.67 blue:0.73 alpha:1.0];
-    
-    XCTAssertTrue([hexColor isEqualToColor:color], @"RRGGBB Colors should be equal!");
+    XCTAssertTrue([hexColor isEqualToColor:color], @"RRGGBB Colors should be equal.");
 }
 
 - (void)testColorFromHexAARRGGBB {
     UIColor *hexColor = [UIColor colorWithHexString:@"#4477aabb"];
     UIColor *color = [UIColor colorWithRed:0.47 green:0.67 blue:0.73 alpha:0.27];
-    
-    XCTAssertTrue([hexColor isEqualToColor:color], @"AARRGGBB Colors should be equal!");
+    XCTAssertTrue([hexColor isEqualToColor:color], @"AARRGGBB Colors should be equal.");
 }
 
 - (void)testHashTagSymbolInTheHEXStringInfluence {
     UIColor *hexColorWithHash = [UIColor colorWithHexString:@"#4477aabb"];
     UIColor *hexColorWithoutHash = [UIColor colorWithHexString:@"4477aabb"];
     UIColor *color = [UIColor colorWithRed:0.47 green:0.67 blue:0.73 alpha:0.27];
-    
-    XCTAssertTrue([hexColorWithHash isEqualToColor:color], @"AARRGGBB Colors should be equal!");
-    XCTAssertTrue([hexColorWithoutHash isEqualToColor:color], @"AARRGGBB Colors should be equal!");
+    XCTAssertTrue([hexColorWithHash isEqualToColor:color], @"AARRGGBB Colors should be equal.");
+    XCTAssertTrue([hexColorWithoutHash isEqualToColor:color], @"AARRGGBB Colors should be equal.");
 }
 
 - (void)testColorWithInvalidHexString {
     UIColor *hexColor = [UIColor colorWithHexString:@"03ek./as"];
-    XCTAssertNil(hexColor, @"Should be nil");
+    XCTAssertNil(hexColor, @"Must be nil.");
+}
+
+- (void)testColorWithInvalidLength {
+    UIColor *hexColor = [UIColor colorWithHexString:@"4444444"];
+    XCTAssertNil(hexColor, @"Must be nil if you pass a string of length not equal to 3, 4, 6 or 8.");
 }
 
 - (void)testColorToHEXStringARGB {
     NSString *hexString = @"#fa3475fb";
     UIColor *color = [UIColor colorWithHexString:hexString];
-    
-    XCTAssertEqualObjects(color.hexStringARGB, [hexString uppercaseString], @"Should be equal");
+    XCTAssertEqualObjects(color.hexStringARGB, [hexString uppercaseString], @"Must be equal.");
 }
 
 - (void)testColorHEXStringRGB {
     NSString *hexString = @"#3475fb";
     UIColor *color = [UIColor colorWithHexString:hexString];
-    
-    XCTAssertEqualObjects(color.hexStringRGB, [hexString uppercaseString], @"Should be equal");
+    XCTAssertEqualObjects(color.hexStringRGB, [hexString uppercaseString], @"Must be equal.");
 }
 
 @end

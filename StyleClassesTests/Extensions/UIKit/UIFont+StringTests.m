@@ -20,4 +20,9 @@
     XCTAssertEqualObjects(font, [UIFont fontWithName:@"Helvetica-Light" size:12.0]);
 }
 
+- (void)testFontFromStringInvalidFormat {
+    UIFont *font = [UIFont fontFromString:@"Helvetica"];
+    XCTAssertNil(font, @"Must return nil if string has invalid format.");
+}
+
 @end

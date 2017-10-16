@@ -52,7 +52,6 @@
             break;
         default:
             return nil;
-            break;
     }
     
     return [UIColor colorWithRed:r green:g blue:b alpha:a];
