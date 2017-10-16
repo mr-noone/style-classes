@@ -16,6 +16,7 @@
 
 @property (nonatomic, class, readonly, nonnull) SCStyleClasses *instance;
 
-- (void)configureWithStylesheetName:(nonnull NSString *)stylesheetName;
+- (void)configureWithStylesheetName:(nonnull NSString *)stylesheetName
+                         withBundle:(nonnull NSBundle *)bundle;
 
 @end
