@@ -8,12 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+@class SCStyle;
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SCStylesheet : NSObject
 
 - (instancetype)initWithStylesheetPath:(NSString *)stylesheetPath
                             withBundle:(NSBundle *)bundle;
+
+- (nullable SCStyle *)styleForStyleClass:(NSString *)styleClass;
 
 @end
 

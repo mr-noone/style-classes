@@ -32,6 +32,8 @@
 }
 
 - (void)tearDown {
+    self.key = nil;
+    self.value = nil;
     self.style = nil;
     [super tearDown];
 }

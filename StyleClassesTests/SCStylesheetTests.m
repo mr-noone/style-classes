@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "SCStylesheet.h"
+#import "SCStyle.h"
 
 @interface SCStylesheet (UnitTests)
 
@@ -40,7 +41,7 @@
         __unused SCStylesheet *stylesheet =
         [[SCStylesheet alloc] initWithStylesheetPath:@"" withBundle:self.bundle];
     };
-    XCTAssertThrowsSpecificNamed(initBlock(), NSException, NSInvalidArgumentException, @"The method must throw an exception if you pass an empty string.");
+    XCTAssertThrowsSpecificNamed(initBlock(), NSException, NSInvalidArgumentException, @"The method must throw an exception if you pass an empty stylesheet path.");
 }
 
 - (void)testInitWithBundleArgumentIsNil {
@@ -68,6 +69,16 @@
         [[SCStylesheet alloc] initWithStylesheetPath:path withBundle:self.bundle];
     };
     XCTAssertThrowsSpecificNamed(initBlock(), NSException, NSGenericException, @"The method must throw an exception if the root object is not a dictionary.");
+}
+
+- (void)testStyleForStyleClass {
+    SCStylesheet *stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:self.stylesheetPath withBundle:self.bundle];
+    XCTAssertNotNil([stylesheet styleForStyleClass:@"View"]);
+}
+
+- (void)testStyleForCompoundStyleClass {
+    SCStylesheet *stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:self.stylesheetPath withBundle:self.bundle];
+    XCTAssertNotNil([stylesheet styleForStyleClass:@"View.Button"]);
 }
 
 @end
