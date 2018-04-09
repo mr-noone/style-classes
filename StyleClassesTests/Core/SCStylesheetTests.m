@@ -9,10 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "SCStylesheet.h"
 #import "SCStyle.h"
-
-@interface SCStylesheet (UnitTests)
-
-@end
+#import "SCStyle+Private.h"
 
 @interface SCStylesheetTests : XCTestCase
 
@@ -79,6 +76,18 @@
 - (void)testStyleForCompoundStyleClass {
     SCStylesheet *stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:self.stylesheetPath withBundle:self.bundle];
     XCTAssertNotNil([stylesheet styleForStyleClass:@"View.Button"]);
+}
+
+- (void)testStyleForNotExistStyleClass {
+    SCStylesheet *stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:self.stylesheetPath withBundle:self.bundle];
+    XCTAssertNotNil([stylesheet styleForStyleClass:@"NotExistStyleClass"]);
+    XCTAssertTrue([stylesheet styleForStyleClass:@"NotExistStyleClass"].isEmpty);
+}
+
+- (void)testStyleForEmptyStyleClass {
+    SCStylesheet *stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:self.stylesheetPath withBundle:self.bundle];
+    XCTAssertNotNil([stylesheet styleForStyleClass:@""]);
+    XCTAssertTrue([stylesheet styleForStyleClass:@"NotExistStyleClass"].isEmpty);
 }
 
 @end

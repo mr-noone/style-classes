@@ -7,4 +7,7 @@
 //
 
 #import <StyleClasses/SCStyleClasses.h>
+#import <StyleClasses/SCStyleClass.h>
 #import <StyleClasses/SCStyle.h>
+
+#import <StyleClasses/UIView+StyleClasses.h>

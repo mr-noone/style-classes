@@ -10,5 +10,6 @@
 #define StyleClasses_pch
 
 #import "NSException+ExceptionNames.h"
+#import "NSNotification+NotificationNames.h"
 
 #endif /* StyleClasses_pch */

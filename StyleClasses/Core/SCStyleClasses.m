@@ -8,6 +8,10 @@
 
 #import "SCStyleClasses.h"
 #import "SCStylesheet.h"
+#import "SCStyleClass.h"
+#import "SCStyle+Private.h"
+
+#import <UIKit/UIKit.h>
 
 @interface SCStyleClasses ()
 
@@ -21,7 +25,17 @@
 #pragma mark - Init
 
 - (instancetype)_init {
-    return [super init];
+    self = [super init];
+    
+    NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
+    [center addObserver:self selector:@selector(needsUpdateStyle:) name:SCNeedsUpdateStyleNotification object:nil];
+    [center addObserver:self selector:@selector(didMoveToWindow:) name:SCDidMoveToWindowNotification object:nil];
+    
+    return self;
+}
+
+- (void)dealloc {
+    [NSNotificationCenter.defaultCenter removeObserver:self];
 }
 
 + (SCStyleClasses *)instance {
@@ -53,6 +67,43 @@
     
     self.stylesheet = [[SCStylesheet alloc] initWithStylesheetPath:stylesheetPath
                                                         withBundle:self.bundle];
+}
+
+#pragma mark - Notification handlers
+
+- (void)didMoveToWindow:(NSNotification *)notification {
+    if ([(NSObject *)notification.object conformsToProtocol:@protocol(SCStyleClass)]) {
+        [self updateStyleForObject:notification.object];
+    }
+}
+
+- (void)needsUpdateStyle:(NSNotification *)notification {
+    if ([(NSObject *)notification.object conformsToProtocol:@protocol(SCStyleClass)]) {
+        [self updateStyleForObject:notification.object];
+    }
+    
+    if ([(NSObject *)notification.object isKindOfClass:UIView.class]) {
+        [self updateStyleForSubviews:(UIView *)notification.object];
+    }
+}
+
+#pragma mark - Update style
+
+- (void)updateStyleForObject:(id<SCStyleClass, NSObject>)object {
+    NSString *styleClass = object.styleClass ?: @"";
+    SCStyle *style = [self.stylesheet styleForStyleClass:styleClass];
+    if (style != nil && style.isEmpty == NO) {
+        [object updateWithStyle:style];
+    }
+}
+
+- (void)updateStyleForSubviews:(UIView<SCStyleClass> *)view {
+    for (UIView *subview in view.subviews) {
+        if ([subview conformsToProtocol:@protocol(SCStyleClass)]) {
+            [self updateStyleForObject:subview];
+            [self updateStyleForSubviews:subview];
+        }
+    }
 }
 
 @end

@@ -10,6 +10,7 @@
 		4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */; };
 		4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */; };
 		4B8A1279207BB684007083CC /* SCStyleClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1278207BB684007083CC /* SCStyleClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A127A207BCA8B007083CC /* SCStyle+Private.h */; };
 		5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */; };
 		5B32D7151F6DBE7000B0ACA1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B32D7141F6DBE3A00B0ACA1 /* image.png */; };
 		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
@@ -65,6 +66,7 @@
 		4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+NotificationNames.h"; sourceTree = "<group>"; };
 		4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+NotificationNames.m"; sourceTree = "<group>"; };
 		4B8A1278207BB684007083CC /* SCStyleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClass.h; sourceTree = "<group>"; };
+		4B8A127A207BCA8B007083CC /* SCStyle+Private.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SCStyle+Private.h"; sourceTree = "<group>"; };
 		5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GeometryTests.m"; sourceTree = "<group>"; };
 		5B32D7141F6DBE3A00B0ACA1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
@@ -211,6 +213,7 @@
 			children = (
 				5B6D86E91F6411FE0069B389 /* StyleClasses.h */,
 				5B8AEFAE1F94DAFA0001E07E /* Core */,
+				5B8AEFAF1F94DB4A0001E07E /* UIKit */,
 				5B643E411F65A47C00D2F8FE /* Extensions */,
 				5B6D87001F6412130069B389 /* Supporting Files */,
 			);
@@ -255,6 +258,7 @@
 				5BF7AC461F6E7A0900A702FE /* SCStylesheet.h */,
 				5BF7AC471F6E7A0900A702FE /* SCStylesheet.m */,
 				5B6A3DA41F65AD4C00E2BA6C /* SCStyle.h */,
+				4B8A127A207BCA8B007083CC /* SCStyle+Private.h */,
 				5B6A3DA51F65AD4C00E2BA6C /* SCStyle.m */,
 			);
 			path = Core;
@@ -319,6 +323,7 @@
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
+				4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */,
 				5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */,
 				5B8AEFB21F94DB740001E07E /* UIView+StyleClasses.h in Headers */,
 				5B6A3DA61F65AD4C00E2BA6C /* SCStyle.h in Headers */,

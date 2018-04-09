@@ -35,10 +35,6 @@ typedef void(^SCStyleColorValue)(UIColor *value);
 
 @interface SCStyle : NSObject
 
-- (nonnull instancetype)initWithStyleClass:(NSString *)styleClass
-                       withStyleProperties:(NSDictionary *)styleProperties
-                                withBundle:(NSBundle *)bundle;
-
 - (void)valueForKey:(NSString *)key inBlock:(SCStyleValueBlock)block;
 
 - (void)boolForKey:(NSString *)key inBlock:(SCStyleBoolBlock)block;
