@@ -13,7 +13,7 @@
 NS_SWIFT_NAME(StyleClass)
 @protocol SCStyleClass
 
-@property (copy, nonatomic, nullable) IBInspectable NSString *styleClass;
+@property (copy, nonatomic, nullable) NSString *styleClass;
 
 - (void)setNeedsUpdateStyle;
 - (void)updateWithStyle:(nonnull SCStyle *)style NS_SWIFT_NAME(update(with:));

@@ -11,4 +11,6 @@
 
 @interface UIView (StyleClasses) <SCStyleClass>
 
+@property (copy, nonatomic, nullable) IBInspectable NSString *styleClass;
+
 @end
