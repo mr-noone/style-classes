@@ -6,10 +6,8 @@
 //  Copyright © 2017 Aleksey Zgurskiy. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
-FOUNDATION_EXPORT double StyleClassesVersionNumber;
-FOUNDATION_EXPORT const unsigned char StyleClassesVersionString[];
-
 #import <StyleClasses/SCStyleClasses.h>
+#import <StyleClasses/SCStyleClass.h>
 #import <StyleClasses/SCStyle.h>
+
+#import <StyleClasses/UIView+StyleClasses.h>

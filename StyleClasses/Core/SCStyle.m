@@ -7,6 +7,7 @@
 //
 
 #import "SCStyle.h"
+#import "SCStyle+Private.h"
 
 #import "NSString+Geometry.h"
 #import "UIFont+String.h"
@@ -38,6 +39,10 @@
     self.bundle = bundle;
     
     return self;
+}
+
+- (BOOL)isEmpty {
+    return self.styleProperties.allKeys.count == 0;
 }
 
 #pragma mark - Value methods

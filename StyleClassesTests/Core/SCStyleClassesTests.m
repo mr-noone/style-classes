@@ -8,6 +8,35 @@
 
 #import <XCTest/XCTest.h>
 #import "SCStyleClasses.h"
+#import "SCStyleClass.h"
+#import "UIView+StyleClasses.h"
+
+@interface UTStyleClass : NSObject <SCStyleClass>
+@property (assign, nonatomic) BOOL isApplyStyle;
+@end
+
+@implementation UTStyleClass
+@synthesize styleClass;
+
+- (void)setNeedsUpdateStyle {}
+
+- (void)updateWithStyle:(nonnull SCStyle *)style {
+    self.isApplyStyle = YES;
+}
+
+@end
+
+@interface UTView : UIView
+@property (assign, nonatomic) BOOL isApplyStyle;
+@end
+
+@implementation UTView
+
+- (void)updateWithStyle:(SCStyle *)style {
+    self.isApplyStyle = YES;
+}
+
+@end
 
 @interface SCStyleClassesTests : XCTestCase
 
@@ -56,6 +85,37 @@
         [SCStyleClasses.instance configureWithStylesheetName:@"NotFound" withBundle:self.bundle];
     };
     XCTAssertThrowsSpecificNamed(configure(), NSException, NSFileNotFoundException, @"The method should throw an exception if the file is not found.");
+}
+
+- (void)testDidMoveToWindow {
+    [SCStyleClasses.instance configureWithStylesheetName:self.stylesheetName withBundle:self.bundle];
+    
+    UTStyleClass *object = UTStyleClass.new;
+    object.styleClass = @"View";
+    
+    NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
+    [center postNotificationName:SCDidMoveToWindowNotification object:object];
+    
+    XCTAssertTrue(object.isApplyStyle);
+}
+
+- (void)testNeedsUpdateStyle {
+    [SCStyleClasses.instance configureWithStylesheetName:self.stylesheetName withBundle:self.bundle];
+    
+    UTView *rootView = UTView.new;
+    UTView *subview1 = UTView.new;
+    UTView *subview2 = UTView.new;
+    rootView.styleClass = @"View";
+    subview1.styleClass = @"View";
+    subview2.styleClass = @"View";
+    [rootView addSubview:subview1];
+    [subview1 addSubview:subview2];
+    
+    [rootView setNeedsUpdateStyle];
+    
+    XCTAssertTrue(rootView.isApplyStyle);
+    XCTAssertTrue(subview1.isApplyStyle);
+    XCTAssertTrue(subview2.isApplyStyle);
 }
 
 @end

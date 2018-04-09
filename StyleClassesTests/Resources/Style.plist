@@ -3,7 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>View</key>
-	<dict/>
+	<dict>
+		<key>test-key</key>
+		<string>test-value</string>
+	</dict>
 	<key>Button</key>
 	<dict/>
 </dict>

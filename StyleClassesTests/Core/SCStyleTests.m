@@ -11,6 +11,7 @@
 #import "UIFont+String.h"
 #import "UIColor+HexString.h"
 #import "SCStyle.h"
+#import "SCStyle+Private.h"
 
 @interface SCStyleTests : XCTestCase
 

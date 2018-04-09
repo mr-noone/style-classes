@@ -18,7 +18,7 @@
 - (void)testCGPointValue {
     CGPoint originPoint = CGPointMake(2.3, 3.0);
     NSString *pointString = [NSString stringWithFormat:@"%f, %f", originPoint.x, originPoint.y];
-    XCTAssertTrue(CGPointEqualToPoint(pointString.CGPointValue, originPoint), @"The points must be equal");
+    XCTAssertTrue(CGPointEqualToPoint(pointString.CGPointValue, originPoint), @"The points must be equal.");
 }
 
 - (void)testCGSizeValue {
@@ -40,6 +40,10 @@
     XCTAssertTrue(CGRectEqualToRect(rectString.CGRectValue, originRect), @"The rects must be equal");
 }
 
+- (void)testCGRectValueInvalid {
+    XCTAssertTrue(CGRectEqualToRect(@"20.0".CGRectValue, CGRectZero), @"Must return 'CGRectZero' if string has invalid format.");
+}
+
 - (void)testUIEdgeInsetsValue {
     UIEdgeInsets originEdgeInsets = UIEdgeInsetsMake(10.0, 43.0, 83.0, 732.0);
     
@@ -51,6 +55,10 @@
     NSString *edgeInsetsString = [NSString stringWithFormat:@"%f, %f, %f, %f", top, left, bottom, right];
     
     XCTAssertTrue(UIEdgeInsetsEqualToEdgeInsets(edgeInsetsString.UIEdgeInsetsValue, originEdgeInsets), @"Must be equal");
+}
+
+- (void)testUIEdgeInsetsValueInvalid {
+    XCTAssertTrue(UIEdgeInsetsEqualToEdgeInsets(@"20.0".UIEdgeInsetsValue, UIEdgeInsetsZero), @"Must return 'CGRectZero' if string has invalid format.");
 }
 
 @end

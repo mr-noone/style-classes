@@ -8,6 +8,7 @@
 
 #import "SCStylesheet.h"
 #import "SCStyle.h"
+#import "SCStyle+Private.h"
 
 #import "NSMutableDictionary+Additional.h"
 
