@@ -19,6 +19,9 @@
 		5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B6D87041F65917B0069B389 /* SCStyleClasses.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87051F65917B0069B389 /* SCStyleClasses.m */; };
 		5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */; };
+		5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B8AEFB81F94E66E0001E07E /* NSObject+Runtime.h */; };
+		5B8AEFBB1F94E66E0001E07E /* NSObject+Runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AEFB91F94E66E0001E07E /* NSObject+Runtime.m */; };
+		5B8AEFBD1F94E6880001E07E /* NSObject+RuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AEFBC1F94E6880001E07E /* NSObject+RuntimeTests.m */; };
 		5BB163121F78177000BAC210 /* StyleInvalidFormat.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */; };
 		5BB163141F781A2000BAC210 /* StyleInvalidRoot.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */; };
 		5BD357671F8CE58300B890D1 /* NSMutableDictionary+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BD357651F8CE58300B890D1 /* NSMutableDictionary+Additional.h */; };
@@ -69,6 +72,9 @@
 		5B6D87041F65917B0069B389 /* SCStyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClasses.h; sourceTree = "<group>"; };
 		5B6D87051F65917B0069B389 /* SCStyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClasses.m; sourceTree = "<group>"; };
 		5B6D87081F65922A0069B389 /* SCStyleClassesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCStyleClassesTests.m; sourceTree = "<group>"; };
+		5B8AEFB81F94E66E0001E07E /* NSObject+Runtime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Runtime.h"; sourceTree = "<group>"; };
+		5B8AEFB91F94E66E0001E07E /* NSObject+Runtime.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Runtime.m"; sourceTree = "<group>"; };
+		5B8AEFBC1F94E6880001E07E /* NSObject+RuntimeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+RuntimeTests.m"; sourceTree = "<group>"; };
 		5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */ = {isa = PBXFileReference; explicitFileType = text.xml; path = StyleInvalidFormat.plist; sourceTree = "<group>"; };
 		5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = StyleInvalidRoot.plist; sourceTree = "<group>"; };
 		5BD357651F8CE58300B890D1 /* NSMutableDictionary+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+Additional.h"; sourceTree = "<group>"; };
@@ -124,6 +130,7 @@
 			isa = PBXGroup;
 			children = (
 				5BD357691F8CE6AF00B890D1 /* NSMutableDictionary+AdditionalTests.m */,
+				5B8AEFBC1F94E6880001E07E /* NSObject+RuntimeTests.m */,
 				5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */,
 			);
 			path = NSFoundation;
@@ -158,6 +165,8 @@
 				5B643E451F65A50400D2F8FE /* NSException+ExceptionNames.m */,
 				5BD357651F8CE58300B890D1 /* NSMutableDictionary+Additional.h */,
 				5BD357661F8CE58300B890D1 /* NSMutableDictionary+Additional.m */,
+				5B8AEFB81F94E66E0001E07E /* NSObject+Runtime.h */,
+				5B8AEFB91F94E66E0001E07E /* NSObject+Runtime.m */,
 				5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */,
 				5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */,
 			);
@@ -276,6 +285,7 @@
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
+				5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */,
 				5B6A3DA61F65AD4C00E2BA6C /* SCStyle.h in Headers */,
 				5BF7AC381F6DE7C500A702FE /* UIColor+HexString.h in Headers */,
 				5BF7AC441F6DE9D700A702FE /* NSCharacterSet+HEX.h in Headers */,
@@ -398,6 +408,7 @@
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
 				5BD357681F8CE58300B890D1 /* NSMutableDictionary+Additional.m in Sources */,
+				5B8AEFBB1F94E66E0001E07E /* NSObject+Runtime.m in Sources */,
 				5B6A3DA71F65AD4C00E2BA6C /* SCStyle.m in Sources */,
 				5BF7AC331F6DE01E00A702FE /* UIFont+String.m in Sources */,
 				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
@@ -409,6 +420,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5BF7AC3B1F6DE7DA00A702FE /* UIColor+HexStringTests.m in Sources */,
+				5B8AEFBD1F94E6880001E07E /* NSObject+RuntimeTests.m in Sources */,
 				5BD3576A1F8CE6AF00B890D1 /* NSMutableDictionary+AdditionalTests.m in Sources */,
 				5B6D87091F65922A0069B389 /* SCStyleClassesTests.m in Sources */,
 				5BF7AC351F6DE03A00A702FE /* UIFont+StringTests.m in Sources */,
