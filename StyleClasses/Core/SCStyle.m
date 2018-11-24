@@ -28,6 +28,10 @@
 
 #pragma mark - Init
 
++ (instancetype)_alloc {
+  return [super alloc];
+}
+
 - (instancetype)initWithStyleClass:(NSString *)styleClass
                withStyleProperties:(NSDictionary *)styleProperties
                         withBundle:(NSBundle *)bundle {

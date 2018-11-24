@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+NS_SWIFT_NAME(StyleClasses)
 @interface SCStyleClasses : NSObject
 
 + (nonnull instancetype)new __attribute__((unavailable("use 'instance' instead")));
@@ -17,6 +18,6 @@
 @property (nonatomic, class, readonly, nonnull) SCStyleClasses *instance;
 
 - (void)configureWithStylesheetName:(nonnull NSString *)stylesheetName
-                         withBundle:(nonnull NSBundle *)bundle;
+                         withBundle:(nonnull NSBundle *)bundle NS_SWIFT_NAME(configure(stylesheetName:in:));
 
 @end

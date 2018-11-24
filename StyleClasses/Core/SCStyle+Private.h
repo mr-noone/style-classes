@@ -10,6 +10,7 @@
 
 @interface SCStyle ()
 
++ (nonnull instancetype)_alloc;
 - (nonnull instancetype)initWithStyleClass:(NSString *)styleClass
                        withStyleProperties:(NSDictionary *)styleProperties
                                 withBundle:(NSBundle *)bundle;

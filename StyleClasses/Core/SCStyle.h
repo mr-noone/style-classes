@@ -16,24 +16,29 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-typedef void(^SCStyleValueBlock)(id value);
+typedef void(^SCStyleValueBlock)(id value) NS_SWIFT_NAME(Style.Value);
 
-typedef void(^SCStyleBoolBlock)(BOOL value);
-typedef void(^SCStyleFloatValue)(CGFloat value);
-typedef void(^SCStyleIntegerValue)(NSInteger value);
+typedef void(^SCStyleBoolBlock)(BOOL value) NS_SWIFT_NAME(Style.Bool);
+typedef void(^SCStyleFloatValue)(CGFloat value) NS_SWIFT_NAME(Style.Float);
+typedef void(^SCStyleIntegerValue)(NSInteger value) NS_SWIFT_NAME(Style.Int);
 
-typedef void(^SCStylePointValue)(CGPoint value);
-typedef void(^SCStyleSizeValue)(CGSize value);
-typedef void(^SCStyleRectValue)(CGRect value);
-typedef void(^SCStyleEdgeInsetsValue)(UIEdgeInsets value);
+typedef void(^SCStylePointValue)(CGPoint value) NS_SWIFT_NAME(Style.Point);
+typedef void(^SCStyleSizeValue)(CGSize value) NS_SWIFT_NAME(Style.Size);
+typedef void(^SCStyleRectValue)(CGRect value) NS_SWIFT_NAME(Style.Rect);
+typedef void(^SCStyleEdgeInsetsValue)(UIEdgeInsets value) NS_SWIFT_NAME(Style.EdgeInsets);
 
-typedef void(^SCStyleNumberValue)(NSNumber *value);
-typedef void(^SCStyleStringValue)(NSString *value);
-typedef void(^SCStyleImageValue)(UIImage *value);
-typedef void(^SCStyleFontValue)(UIFont *value);
-typedef void(^SCStyleColorValue)(UIColor *value);
+typedef void(^SCStyleNumberValue)(NSNumber *value) NS_SWIFT_UNAVAILABLE("");
+typedef void(^SCStyleStringValue)(NSString *value) NS_SWIFT_NAME(Style.String);
+typedef void(^SCStyleImageValue)(UIImage *value) NS_SWIFT_NAME(Style.Image);
+typedef void(^SCStyleFontValue)(UIFont *value) NS_SWIFT_NAME(Style.Font);
+typedef void(^SCStyleColorValue)(UIColor *value) NS_SWIFT_NAME(Style.Color);
 
+NS_SWIFT_NAME(Style)
 @interface SCStyle : NSObject
+
++ (nonnull instancetype)new __attribute__((unavailable("")));
++ (nonnull instancetype)alloc __attribute__((unavailable("")));
+- (nonnull instancetype)init __attribute__((unavailable("")));
 
 - (void)valueForKey:(NSString *)key inBlock:(SCStyleValueBlock)block;
 
@@ -46,7 +51,9 @@ typedef void(^SCStyleColorValue)(UIColor *value);
 - (void)rectForKey:(NSString *)key inBlock:(SCStyleRectValue)block;
 - (void)edgeInsetsForKey:(NSString *)key inBlock:(SCStyleEdgeInsetsValue)block;
 
-- (void)numberForKey:(NSString *)key inBlock:(SCStyleNumberValue)block;
+- (void)numberForKey:(NSString *)key inBlock:(SCStyleNumberValue)block
+NS_SWIFT_UNAVAILABLE("Use 'integerForKey:inBlock:' or 'floatForKey:inBlock:' instead");
+
 - (void)stringForKey:(NSString *)key inBlock:(SCStyleStringValue)block;
 - (void)imageForKey:(NSString *)key inBlock:(SCStyleImageValue)block;
 - (void)fontForKey:(NSString *)key inBlock:(SCStyleFontValue)block;

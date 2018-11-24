@@ -113,9 +113,9 @@
     
     if (style == nil) {
         NSDictionary *properties = [self propertiesForStyleClass:styleClass];
-        style = [[SCStyle alloc] initWithStyleClass:styleClass
-                                withStyleProperties:properties
-                                         withBundle:self.bundle];
+        style = [[SCStyle _alloc] initWithStyleClass:styleClass
+                                 withStyleProperties:properties
+                                          withBundle:self.bundle];
         [self.styles setObject:style forKey:styleClass];
     }
     
