@@ -30,6 +30,10 @@
 		4B8A1281207BE53A007083CC /* UIWindow+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A127F207BE53A007083CC /* UIWindow+StyleClasses.m */; };
 		4B9E6B3421AB1AEC000D348A /* NSDictionary+Additional.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9E6B3221AB1AEC000D348A /* NSDictionary+Additional.h */; };
 		4B9E6B3521AB1AEC000D348A /* NSDictionary+Additional.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E6B3321AB1AEC000D348A /* NSDictionary+Additional.m */; };
+		4B9E6B3821AB218B000D348A /* UITableView+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9E6B3621AB218B000D348A /* UITableView+StyleClasses.h */; };
+		4B9E6B3921AB218B000D348A /* UITableView+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E6B3721AB218B000D348A /* UITableView+StyleClasses.m */; };
+		4B9E6B3C21AB247F000D348A /* UITableViewCell+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B9E6B3A21AB247F000D348A /* UITableViewCell+StyleClasses.h */; };
+		4B9E6B3D21AB247F000D348A /* UITableViewCell+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B9E6B3B21AB247F000D348A /* UITableViewCell+StyleClasses.m */; };
 		5B32D7121F6D9BBF00B0ACA1 /* NSString+GeometryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */; };
 		5B32D7151F6DBE7000B0ACA1 /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B32D7141F6DBE3A00B0ACA1 /* image.png */; };
 		5B643E461F65A50400D2F8FE /* NSException+ExceptionNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */; };
@@ -105,6 +109,10 @@
 		4B8A127F207BE53A007083CC /* UIWindow+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+StyleClasses.m"; sourceTree = "<group>"; };
 		4B9E6B3221AB1AEC000D348A /* NSDictionary+Additional.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+Additional.h"; sourceTree = "<group>"; };
 		4B9E6B3321AB1AEC000D348A /* NSDictionary+Additional.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+Additional.m"; sourceTree = "<group>"; };
+		4B9E6B3621AB218B000D348A /* UITableView+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableView+StyleClasses.h"; sourceTree = "<group>"; };
+		4B9E6B3721AB218B000D348A /* UITableView+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableView+StyleClasses.m"; sourceTree = "<group>"; };
+		4B9E6B3A21AB247F000D348A /* UITableViewCell+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+StyleClasses.h"; sourceTree = "<group>"; };
+		4B9E6B3B21AB247F000D348A /* UITableViewCell+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+StyleClasses.m"; sourceTree = "<group>"; };
 		5B32D7111F6D9BBF00B0ACA1 /* NSString+GeometryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+GeometryTests.m"; sourceTree = "<group>"; };
 		5B32D7141F6DBE3A00B0ACA1 /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 		5B643E441F65A50400D2F8FE /* NSException+ExceptionNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+ExceptionNames.h"; sourceTree = "<group>"; };
@@ -318,6 +326,10 @@
 				4B515B0621AAD16700658B09 /* UINavigationBar+StyleClasses.m */,
 				4B4CA58921A99829000035AE /* UIScrollView+StyleClasses.h */,
 				4B4CA58A21A99829000035AE /* UIScrollView+StyleClasses.m */,
+				4B9E6B3621AB218B000D348A /* UITableView+StyleClasses.h */,
+				4B9E6B3721AB218B000D348A /* UITableView+StyleClasses.m */,
+				4B9E6B3A21AB247F000D348A /* UITableViewCell+StyleClasses.h */,
+				4B9E6B3B21AB247F000D348A /* UITableViewCell+StyleClasses.m */,
 				4B4CA58D21A99FE0000035AE /* UITextField+StyleClasses.h */,
 				4B4CA58E21A99FE0000035AE /* UITextField+StyleClasses.m */,
 				5B8AEFB01F94DB740001E07E /* UIView+StyleClasses.h */,
@@ -382,10 +394,12 @@
 				4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
 				4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */,
+				4B9E6B3C21AB247F000D348A /* UITableViewCell+StyleClasses.h in Headers */,
 				4B4CA58B21A99829000035AE /* UIScrollView+StyleClasses.h in Headers */,
 				4B4CA57D21A981ED000035AE /* UIButton+StyleClasses.h in Headers */,
 				4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */,
 				4B8A1280207BE53A007083CC /* UIWindow+StyleClasses.h in Headers */,
+				4B9E6B3821AB218B000D348A /* UITableView+StyleClasses.h in Headers */,
 				5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */,
 				5B8AEFB21F94DB740001E07E /* UIView+StyleClasses.h in Headers */,
 				5B6A3DA61F65AD4C00E2BA6C /* SCStyle.h in Headers */,
@@ -521,6 +535,7 @@
 				4B4CA57E21A981ED000035AE /* UIButton+StyleClasses.m in Sources */,
 				5BD357681F8CE58300B890D1 /* NSMutableDictionary+Additional.m in Sources */,
 				5B8AEFBB1F94E66E0001E07E /* NSObject+Runtime.m in Sources */,
+				4B9E6B3D21AB247F000D348A /* UITableViewCell+StyleClasses.m in Sources */,
 				5B8AEFB31F94DB740001E07E /* UIView+StyleClasses.m in Sources */,
 				4B9E6B3521AB1AEC000D348A /* NSDictionary+Additional.m in Sources */,
 				5B6A3DA71F65AD4C00E2BA6C /* SCStyle.m in Sources */,
@@ -531,6 +546,7 @@
 				4B4CA58821A9915D000035AE /* UIImage+Color.m in Sources */,
 				4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */,
 				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
+				4B9E6B3921AB218B000D348A /* UITableView+StyleClasses.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

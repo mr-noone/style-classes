@@ -154,4 +154,11 @@
     return UIBarStyleDefault;
 }
 
+- (UITableViewCellSeparatorStyle)separatorStyle {
+  if ([self isEqualToString:@"single-line"])
+    return UITableViewCellSeparatorStyleSingleLine;
+  else
+    return UITableViewCellSeparatorStyleNone;
+}
+
 @end

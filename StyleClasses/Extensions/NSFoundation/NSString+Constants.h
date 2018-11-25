@@ -74,4 +74,10 @@
  */
 @property (nonatomic, readonly) UIBarStyle barStyle;
 
+/**
+ The UITableViewCellSeparatorStyle value of the string. Can be 'single-line' or 'none'.
+ This property is UITableViewCellSeparatorStyleNone if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UITableViewCellSeparatorStyle separatorStyle;
+
 @end
