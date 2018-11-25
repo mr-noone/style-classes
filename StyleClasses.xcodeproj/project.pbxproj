@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4CA57D21A981ED000035AE /* UIButton+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA57B21A981ED000035AE /* UIButton+StyleClasses.h */; };
+		4B4CA57E21A981ED000035AE /* UIButton+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA57C21A981ED000035AE /* UIButton+StyleClasses.m */; };
 		4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA57F21A9849A000035AE /* NSString+Constants.h */; };
 		4B4CA58221A9849A000035AE /* NSString+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58021A9849A000035AE /* NSString+Constants.m */; };
 		4B4CA58421A989AD000035AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CA58321A989AD000035AE /* Localizable.strings */; };
@@ -70,6 +72,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4CA57B21A981ED000035AE /* UIButton+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+StyleClasses.h"; sourceTree = "<group>"; };
+		4B4CA57C21A981ED000035AE /* UIButton+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+StyleClasses.m"; sourceTree = "<group>"; };
 		4B4CA57F21A9849A000035AE /* NSString+Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Constants.h"; sourceTree = "<group>"; };
 		4B4CA58021A9849A000035AE /* NSString+Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Constants.m"; sourceTree = "<group>"; };
 		4B4CA58321A989AD000035AE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
@@ -284,6 +288,8 @@
 		5B8AEFAF1F94DB4A0001E07E /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				4B4CA57B21A981ED000035AE /* UIButton+StyleClasses.h */,
+				4B4CA57C21A981ED000035AE /* UIButton+StyleClasses.m */,
 				5B8AEFB01F94DB740001E07E /* UIView+StyleClasses.h */,
 				5B8AEFB11F94DB740001E07E /* UIView+StyleClasses.m */,
 				4B8A127E207BE53A007083CC /* UIWindow+StyleClasses.h */,
@@ -346,6 +352,7 @@
 				4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
 				4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */,
+				4B4CA57D21A981ED000035AE /* UIButton+StyleClasses.h in Headers */,
 				4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */,
 				4B8A1280207BE53A007083CC /* UIWindow+StyleClasses.h in Headers */,
 				5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */,
@@ -474,6 +481,7 @@
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
+				4B4CA57E21A981ED000035AE /* UIButton+StyleClasses.m in Sources */,
 				5BD357681F8CE58300B890D1 /* NSMutableDictionary+Additional.m in Sources */,
 				5B8AEFBB1F94E66E0001E07E /* NSObject+Runtime.m in Sources */,
 				5B8AEFB31F94DB740001E07E /* UIView+StyleClasses.m in Sources */,
