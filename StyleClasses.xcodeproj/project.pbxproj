@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA57F21A9849A000035AE /* NSString+Constants.h */; };
+		4B4CA58221A9849A000035AE /* NSString+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58021A9849A000035AE /* NSString+Constants.m */; };
 		4B4CA58421A989AD000035AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CA58321A989AD000035AE /* Localizable.strings */; };
+		4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA58521A9915D000035AE /* UIImage+Color.h */; };
+		4B4CA58821A9915D000035AE /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58621A9915D000035AE /* UIImage+Color.m */; };
 		4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */; };
 		4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */; };
 		4B8A1279207BB684007083CC /* SCStyleClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1278207BB684007083CC /* SCStyleClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -66,7 +70,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4CA57F21A9849A000035AE /* NSString+Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Constants.h"; sourceTree = "<group>"; };
+		4B4CA58021A9849A000035AE /* NSString+Constants.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Constants.m"; sourceTree = "<group>"; };
 		4B4CA58321A989AD000035AE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		4B4CA58521A9915D000035AE /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
+		4B4CA58621A9915D000035AE /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
 		4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+NotificationNames.h"; sourceTree = "<group>"; };
 		4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+NotificationNames.m"; sourceTree = "<group>"; };
 		4B8A1278207BB684007083CC /* SCStyleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClass.h; sourceTree = "<group>"; };
@@ -192,6 +200,8 @@
 				5B8AEFB91F94E66E0001E07E /* NSObject+Runtime.m */,
 				5BFE5C7A1F6D9A7200165570 /* NSString+Geometry.h */,
 				5BFE5C7B1F6D9A7200165570 /* NSString+Geometry.m */,
+				4B4CA57F21A9849A000035AE /* NSString+Constants.h */,
+				4B4CA58021A9849A000035AE /* NSString+Constants.m */,
 			);
 			path = NSFoundation;
 			sourceTree = "<group>";
@@ -309,6 +319,8 @@
 				5BF7AC371F6DE7C500A702FE /* UIColor+HexString.m */,
 				5BF7AC301F6DE01E00A702FE /* UIFont+String.h */,
 				5BF7AC311F6DE01E00A702FE /* UIFont+String.m */,
+				4B4CA58521A9915D000035AE /* UIImage+Color.h */,
+				4B4CA58621A9915D000035AE /* UIImage+Color.m */,
 			);
 			path = UIKit;
 			sourceTree = "<group>";
@@ -331,8 +343,10 @@
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
+				4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
 				4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */,
+				4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */,
 				4B8A1280207BE53A007083CC /* UIWindow+StyleClasses.h in Headers */,
 				5B8AEFBA1F94E66E0001E07E /* NSObject+Runtime.h in Headers */,
 				5B8AEFB21F94DB740001E07E /* UIView+StyleClasses.h in Headers */,
@@ -456,6 +470,7 @@
 				5BF7AC391F6DE7C500A702FE /* UIColor+HexString.m in Sources */,
 				5BF7AC491F6E7A0900A702FE /* SCStylesheet.m in Sources */,
 				5BF7AC451F6DE9D700A702FE /* NSCharacterSet+HEX.m in Sources */,
+				4B4CA58221A9849A000035AE /* NSString+Constants.m in Sources */,
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
@@ -465,6 +480,7 @@
 				5B6A3DA71F65AD4C00E2BA6C /* SCStyle.m in Sources */,
 				4B8A1281207BE53A007083CC /* UIWindow+StyleClasses.m in Sources */,
 				5BF7AC331F6DE01E00A702FE /* UIFont+String.m in Sources */,
+				4B4CA58821A9915D000035AE /* UIImage+Color.m in Sources */,
 				4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */,
 				5B643E471F65A50400D2F8FE /* NSException+ExceptionNames.m in Sources */,
 			);

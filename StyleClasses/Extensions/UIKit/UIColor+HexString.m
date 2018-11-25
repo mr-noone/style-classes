@@ -26,6 +26,12 @@
     CGFloat r = 0, g = 0, b = 0, a = 0;
     
     switch(hexString.length) {
+        case 2:
+            r = (CGFloat)code / 255;
+            g = (CGFloat)code / 255;
+            b = (CGFloat)code / 255;
+            a = 1;
+            break;
         case 3:
             r = (CGFloat)((code >> 8) * 17) / 255;
             g = (CGFloat)((code >> 4 & 0xf) * 17) / 255;
