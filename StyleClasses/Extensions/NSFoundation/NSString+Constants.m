@@ -143,4 +143,15 @@
     return UIReturnKeyDefault;
 }
 
+- (UIBarStyle)barStyle {
+  if ([self isEqualToString:@"black"])
+    return UIBarStyleBlack;
+  else if ([self isEqualToString:@"black-opaque"])
+    return UIBarStyleBlackOpaque;
+  else if ([self isEqualToString:@"black-translucent"])
+    return UIBarStyleBlackTranslucent;
+  else
+    return UIBarStyleDefault;
+}
+
 @end

@@ -68,4 +68,10 @@
  */
 @property (nonatomic, readonly) UIReturnKeyType returnKeyType;
 
+/**
+ The UIBarStyle value of the string. Can be 'default', 'black', 'black-opaque' or 'black-translucent'.
+ This property is UIBarStyleDefault if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UIBarStyle barStyle;
+
 @end
