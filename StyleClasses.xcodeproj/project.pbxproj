@@ -16,6 +16,8 @@
 		4B4CA58421A989AD000035AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CA58321A989AD000035AE /* Localizable.strings */; };
 		4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA58521A9915D000035AE /* UIImage+Color.h */; };
 		4B4CA58821A9915D000035AE /* UIImage+Color.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58621A9915D000035AE /* UIImage+Color.m */; };
+		4B4CA58B21A99829000035AE /* UIScrollView+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B4CA58921A99829000035AE /* UIScrollView+StyleClasses.h */; };
+		4B4CA58C21A99829000035AE /* UIScrollView+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58A21A99829000035AE /* UIScrollView+StyleClasses.m */; };
 		4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */; };
 		4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */; };
 		4B8A1279207BB684007083CC /* SCStyleClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1278207BB684007083CC /* SCStyleClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -83,6 +85,8 @@
 		4B4CA58321A989AD000035AE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4B4CA58521A9915D000035AE /* UIImage+Color.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Color.h"; sourceTree = "<group>"; };
 		4B4CA58621A9915D000035AE /* UIImage+Color.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Color.m"; sourceTree = "<group>"; };
+		4B4CA58921A99829000035AE /* UIScrollView+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+StyleClasses.h"; sourceTree = "<group>"; };
+		4B4CA58A21A99829000035AE /* UIScrollView+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+StyleClasses.m"; sourceTree = "<group>"; };
 		4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+NotificationNames.h"; sourceTree = "<group>"; };
 		4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+NotificationNames.m"; sourceTree = "<group>"; };
 		4B8A1278207BB684007083CC /* SCStyleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClass.h; sourceTree = "<group>"; };
@@ -296,6 +300,8 @@
 				4B4CA57C21A981ED000035AE /* UIButton+StyleClasses.m */,
 				4B4CA57721A97AD4000035AE /* UILabel+StyleClasses.h */,
 				4B4CA57821A97AD4000035AE /* UILabel+StyleClasses.m */,
+				4B4CA58921A99829000035AE /* UIScrollView+StyleClasses.h */,
+				4B4CA58A21A99829000035AE /* UIScrollView+StyleClasses.m */,
 				5B8AEFB01F94DB740001E07E /* UIView+StyleClasses.h */,
 				5B8AEFB11F94DB740001E07E /* UIView+StyleClasses.m */,
 				4B8A127E207BE53A007083CC /* UIWindow+StyleClasses.h */,
@@ -358,6 +364,7 @@
 				4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
 				4B8A127B207BCA8B007083CC /* SCStyle+Private.h in Headers */,
+				4B4CA58B21A99829000035AE /* UIScrollView+StyleClasses.h in Headers */,
 				4B4CA57D21A981ED000035AE /* UIButton+StyleClasses.h in Headers */,
 				4B4CA58721A9915D000035AE /* UIImage+Color.h in Headers */,
 				4B8A1280207BE53A007083CC /* UIWindow+StyleClasses.h in Headers */,
@@ -485,6 +492,7 @@
 				5BF7AC491F6E7A0900A702FE /* SCStylesheet.m in Sources */,
 				5BF7AC451F6DE9D700A702FE /* NSCharacterSet+HEX.m in Sources */,
 				4B4CA58221A9849A000035AE /* NSString+Constants.m in Sources */,
+				4B4CA58C21A99829000035AE /* UIScrollView+StyleClasses.m in Sources */,
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
