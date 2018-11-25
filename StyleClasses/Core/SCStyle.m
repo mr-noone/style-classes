@@ -118,6 +118,14 @@
     }];
 }
 
+- (void)localizedStringForKey:(NSString *)key inBlock:(SCStyleStringValue)block {
+    [self valueForKey:key inBlock:^(id value) {
+        if ([value isKindOfClass:NSString.class]) {
+            block(NSLocalizedString(value, nil));
+        }
+    }];
+}
+
 - (void)imageForKey:(NSString *)key inBlock:(SCStyleImageValue)block {
     [self stringForKey:key inBlock:^(NSString *value) {
         UIImage *image = [UIImage imageNamed:value

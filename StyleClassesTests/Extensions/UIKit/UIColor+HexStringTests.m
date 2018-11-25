@@ -16,6 +16,12 @@
 
 @implementation UIColor_HexStringTests
 
+- (void)testColorFromHexWhite {
+    UIColor *hexColor = [UIColor colorWithHexString:@"#56"];
+    UIColor *color = [UIColor colorWithWhite:0.337 alpha:1.0];
+    XCTAssertTrue([hexColor isEqualToColor:color], @"White Colors should be equal.");
+}
+
 - (void)testColorFromHexRGB {
     UIColor *hexColor = [UIColor colorWithHexString:@"#a2b"];
     UIColor *color = [UIColor colorWithRed:0.67 green:0.13 blue:0.73 alpha:1.0];

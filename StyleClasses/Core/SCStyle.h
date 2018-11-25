@@ -55,6 +55,7 @@ NS_SWIFT_NAME(Style)
 NS_SWIFT_UNAVAILABLE("Use 'integerForKey:inBlock:' or 'floatForKey:inBlock:' instead");
 
 - (void)stringForKey:(NSString *)key inBlock:(SCStyleStringValue)block;
+- (void)localizedStringForKey:(NSString *)key inBlock:(SCStyleStringValue)block;
 - (void)imageForKey:(NSString *)key inBlock:(SCStyleImageValue)block;
 - (void)fontForKey:(NSString *)key inBlock:(SCStyleFontValue)block;
 - (void)colorForKey:(NSString *)key inBlock:(SCStyleColorValue)block;

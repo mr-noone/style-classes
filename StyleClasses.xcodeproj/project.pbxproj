@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4B4CA58421A989AD000035AE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4B4CA58321A989AD000035AE /* Localizable.strings */; };
 		4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */; };
 		4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */; };
 		4B8A1279207BB684007083CC /* SCStyleClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1278207BB684007083CC /* SCStyleClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -65,6 +66,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4B4CA58321A989AD000035AE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+NotificationNames.h"; sourceTree = "<group>"; };
 		4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+NotificationNames.m"; sourceTree = "<group>"; };
 		4B8A1278207BB684007083CC /* SCStyleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClass.h; sourceTree = "<group>"; };
@@ -161,6 +163,7 @@
 				5BF7AC4C1F6E811100A702FE /* Style.plist */,
 				5BB163111F78177000BAC210 /* StyleInvalidFormat.plist */,
 				5BB163131F781A2000BAC210 /* StyleInvalidRoot.plist */,
+				4B4CA58321A989AD000035AE /* Localizable.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -435,6 +438,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B4CA58421A989AD000035AE /* Localizable.strings in Resources */,
 				5BB163141F781A2000BAC210 /* StyleInvalidRoot.plist in Resources */,
 				5BF7AC4D1F6E811100A702FE /* Style.plist in Resources */,
 				5BB163121F78177000BAC210 /* StyleInvalidFormat.plist in Resources */,

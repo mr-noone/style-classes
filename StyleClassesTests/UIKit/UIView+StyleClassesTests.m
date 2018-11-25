@@ -27,9 +27,9 @@
     self.key = key;
     self.value = value;
     
-    self.style = [[SCStyle alloc] initWithStyleClass:@"Class"
-                                 withStyleProperties:@{self.key: self.value}
-                                          withBundle:[NSBundle bundleForClass:self.class]];
+    self.style = [[SCStyle _alloc] initWithStyleClass:@"Class"
+                                  withStyleProperties:@{self.key: self.value}
+                                           withBundle:[NSBundle bundleForClass:self.class]];
     [self.view updateWithStyle:self.style];
 }
 

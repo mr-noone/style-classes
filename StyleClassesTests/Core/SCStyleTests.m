@@ -27,9 +27,9 @@
     self.key = key;
     self.value = value;
     
-    self.style = [[SCStyle alloc] initWithStyleClass:@"Class"
-                                 withStyleProperties:@{self.key: self.value}
-                                          withBundle:[NSBundle bundleForClass:self.class]];
+    self.style = [[SCStyle _alloc] initWithStyleClass:@"Class"
+                                  withStyleProperties:@{self.key: self.value}
+                                           withBundle:[NSBundle bundleForClass:self.class]];
 }
 
 - (void)tearDown {
@@ -40,9 +40,9 @@
 }
 
 - (void)testInit {
-    XCTAssertNotNil([[SCStyle alloc] initWithStyleClass:@""
-                                    withStyleProperties:@{}
-                                             withBundle:NSBundle.mainBundle]);
+    XCTAssertNotNil([[SCStyle _alloc] initWithStyleClass:@""
+                                     withStyleProperties:@{}
+                                              withBundle:NSBundle.mainBundle]);
 }
 
 - (void)testValueForKey {
@@ -190,6 +190,17 @@
     }];
     
     XCTAssertEqualObjects(stringValue, self.value, @"Must be return '%@' for '%@' key", self.value, self.key);
+}
+
+- (void)testLocalizedStringForKey {
+    [self setUpWithKey:@"stringValue" withValue:@"LocalizedKey"];
+  
+    __block NSString *stringValue;
+    [self.style localizedStringForKey:self.key inBlock:^(NSString *value) {
+        stringValue = value;
+    }];
+  
+    XCTAssertEqualObjects(stringValue, NSLocalizedString(self.value, nil), @"Must be return localized string for '%@' key", self.value);
 }
 
 - (void)testImageForKey {
