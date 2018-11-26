@@ -16,6 +16,8 @@
 #import "NSDictionary+Additional.h"
 #import "NSObject+Runtime.h"
 
+#import <objc/runtime.h>
+
 @implementation UINavigationBar (StyleClasses)
 
 + (void)load {
@@ -38,6 +40,20 @@
   NSDictionary *dict = [self sc_largeTitleTextAttributes];
   if (dict == nil) dict = [NSDictionary dictionary];
   return dict;
+}
+
+- (void)didMoveToWindow {
+  [super didMoveToWindow];
+  
+  for (UINavigationItem *item in self.items) {
+    NSNotificationCenter *center = NSNotificationCenter.defaultCenter;
+    [center postNotificationName:SCDidMoveToWindowNotification object:item];
+  }
+}
+
+- (void)setNeedsUpdateStyle {
+  [super setNeedsUpdateStyle];
+  [self.items performSelector:@selector(setNeedsUpdateStyle)];
 }
 
 - (void)updateWithStyle:(SCStyle *)style {

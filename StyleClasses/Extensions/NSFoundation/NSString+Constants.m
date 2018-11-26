@@ -161,4 +161,13 @@
     return UITableViewCellSeparatorStyleNone;
 }
 
+- (UINavigationItemLargeTitleDisplayMode)largeTitleDisplayMode {
+  if ([self isEqualToString:@"always"])
+    return UINavigationItemLargeTitleDisplayModeAlways;
+  else if ([self isEqualToString:@"never"])
+    return UINavigationItemLargeTitleDisplayModeNever;
+  else
+    return UINavigationItemLargeTitleDisplayModeAutomatic;
+}
+
 @end

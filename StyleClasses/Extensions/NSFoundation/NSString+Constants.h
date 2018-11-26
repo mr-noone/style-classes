@@ -80,4 +80,10 @@
  */
 @property (nonatomic, readonly) UITableViewCellSeparatorStyle separatorStyle;
 
+/**
+ The UINavigationItemLargeTitleDisplayMode value of the string. Can be 'always', 'never' or 'automatic'.
+ This property is UINavigationItemLargeTitleDisplayModeAutomatic if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UINavigationItemLargeTitleDisplayMode largeTitleDisplayMode;
+
 @end

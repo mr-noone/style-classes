@@ -99,7 +99,7 @@
 }
 
 - (BOOL)isConstant:(nonnull NSString *)key {
-    if ([key isKindOfClass:[NSString class]]) {
+    if ([key isKindOfClass:[NSString class]] && key.length > 0) {
         return [[key substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"$"];
     }
     
