@@ -31,7 +31,7 @@
   }];
   
   [style stringForKey:@"alignment" inBlock:^(NSString *value) {
-    self.textAlignment = value.alignment;
+    self.textAlignment = value.textAlignment;
   }];
   
   [style integerForKey:@"lines" inBlock:^(NSInteger value) {

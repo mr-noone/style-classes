@@ -52,7 +52,7 @@
   }];
   
   [style stringForKey:@"alignment" inBlock:^(NSString * _Nonnull value) {
-    self.textAlignment = value.alignment;
+    self.textAlignment = value.textAlignment;
   }];
   
   [style stringForKey:@"border-style" inBlock:^(NSString * _Nonnull value) {

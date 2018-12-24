@@ -16,7 +16,7 @@
  Can be 'left', 'right', 'center', 'justified' or 'natural'.
  This property is NSTextAlignmentLeft if the string does not match the available value.
  */
-@property (nonatomic, readonly) NSTextAlignment alignment;
+@property (nonatomic, readonly) NSTextAlignment textAlignment;
 
 /**
  The UIScrollViewKeyboardDismissMode value of the string. Can be 'none', 'on-drag' or 'interactive'.
@@ -85,5 +85,24 @@
  This property is UINavigationItemLargeTitleDisplayModeAutomatic if the string does not match the available value.
  */
 @property (nonatomic, readonly) UINavigationItemLargeTitleDisplayMode largeTitleDisplayMode;
+
+/**
+ The UIStackViewAlignment value of the string. Can be 'leading', 'top',
+ 'first-baseline', 'center', 'trailing', 'bottom', 'last-baseline' or 'fill'.
+ This property is UIStackViewAlignmentFill if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UIStackViewAlignment stackViewAlignment API_AVAILABLE(ios(9.0));
+
+/**
+ The UILayoutConstraintAxis value of the string. Can be 'horizontal' or 'vertical'.
+ This property is UILayoutConstraintAxisVertical if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UILayoutConstraintAxis constraintAxis;
+
+/**
+ The UIStackViewDistribution value of the string. Can be 'fill', 'fill-equally', 'fill-proportionally' or 'equal-spacing'.
+ This property is UIStackViewDistributionFill if the string does not match the available value.
+ */
+@property (nonatomic, readonly) UIStackViewDistribution stackViewDistribution API_AVAILABLE(ios(9.0));
 
 @end

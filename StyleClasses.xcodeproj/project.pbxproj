@@ -22,6 +22,8 @@
 		4B4CA59021A99FE0000035AE /* UITextField+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B4CA58E21A99FE0000035AE /* UITextField+StyleClasses.m */; };
 		4B515B0721AAD16700658B09 /* UINavigationBar+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B515B0521AAD16700658B09 /* UINavigationBar+StyleClasses.h */; };
 		4B515B0821AAD16700658B09 /* UINavigationBar+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B515B0621AAD16700658B09 /* UINavigationBar+StyleClasses.m */; };
+		4B597DF321D1106F00DF996A /* UIStackView+StyleClasses.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B597DF121D1106F00DF996A /* UIStackView+StyleClasses.h */; };
+		4B597DF421D1106F00DF996A /* UIStackView+StyleClasses.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B597DF221D1106F00DF996A /* UIStackView+StyleClasses.m */; };
 		4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */; };
 		4B8A1277207BB230007083CC /* NSNotification+NotificationNames.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */; };
 		4B8A1279207BB684007083CC /* SCStyleClass.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B8A1278207BB684007083CC /* SCStyleClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -105,6 +107,8 @@
 		4B4CA58E21A99FE0000035AE /* UITextField+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UITextField+StyleClasses.m"; sourceTree = "<group>"; };
 		4B515B0521AAD16700658B09 /* UINavigationBar+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+StyleClasses.h"; sourceTree = "<group>"; };
 		4B515B0621AAD16700658B09 /* UINavigationBar+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+StyleClasses.m"; sourceTree = "<group>"; };
+		4B597DF121D1106F00DF996A /* UIStackView+StyleClasses.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIStackView+StyleClasses.h"; sourceTree = "<group>"; };
+		4B597DF221D1106F00DF996A /* UIStackView+StyleClasses.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIStackView+StyleClasses.m"; sourceTree = "<group>"; };
 		4B8A1274207BB230007083CC /* NSNotification+NotificationNames.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+NotificationNames.h"; sourceTree = "<group>"; };
 		4B8A1275207BB230007083CC /* NSNotification+NotificationNames.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+NotificationNames.m"; sourceTree = "<group>"; };
 		4B8A1278207BB684007083CC /* SCStyleClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCStyleClass.h; sourceTree = "<group>"; };
@@ -338,6 +342,8 @@
 				4B9E6B3F21AB2A07000D348A /* UINavigationItem+StyleClasses.m */,
 				4B4CA58921A99829000035AE /* UIScrollView+StyleClasses.h */,
 				4B4CA58A21A99829000035AE /* UIScrollView+StyleClasses.m */,
+				4B597DF121D1106F00DF996A /* UIStackView+StyleClasses.h */,
+				4B597DF221D1106F00DF996A /* UIStackView+StyleClasses.m */,
 				4B9E6B3621AB218B000D348A /* UITableView+StyleClasses.h */,
 				4B9E6B3721AB218B000D348A /* UITableView+StyleClasses.m */,
 				4B9E6B3A21AB247F000D348A /* UITableViewCell+StyleClasses.h */,
@@ -402,6 +408,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5B6D86F71F6411FE0069B389 /* StyleClasses.h in Headers */,
+				4B597DF321D1106F00DF996A /* UIStackView+StyleClasses.h in Headers */,
 				5B6D87061F65917B0069B389 /* SCStyleClasses.h in Headers */,
 				4B4CA58121A9849A000035AE /* NSString+Constants.h in Headers */,
 				4B8A1276207BB230007083CC /* NSNotification+NotificationNames.h in Headers */,
@@ -545,6 +552,7 @@
 				4B4CA58C21A99829000035AE /* UIScrollView+StyleClasses.m in Sources */,
 				5B6D87071F65917B0069B389 /* SCStyleClasses.m in Sources */,
 				5BFE5C7D1F6D9A7200165570 /* NSString+Geometry.m in Sources */,
+				4B597DF421D1106F00DF996A /* UIStackView+StyleClasses.m in Sources */,
 				5BF7AC3F1F6DE7F500A702FE /* UIColor+Compare.m in Sources */,
 				4B515B0821AAD16700658B09 /* UINavigationBar+StyleClasses.m in Sources */,
 				4B4CA57E21A981ED000035AE /* UIButton+StyleClasses.m in Sources */,

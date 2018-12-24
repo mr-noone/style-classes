@@ -10,7 +10,7 @@
 
 @implementation NSString (Constants)
 
-- (NSTextAlignment)alignment {
+- (NSTextAlignment)textAlignment {
   if ([self isEqualToString:@"left"])
     return NSTextAlignmentLeft;
   else if ([self isEqualToString:@"right"])
@@ -168,6 +168,43 @@
     return UINavigationItemLargeTitleDisplayModeNever;
   else
     return UINavigationItemLargeTitleDisplayModeAutomatic;
+}
+
+- (UIStackViewAlignment)stackViewAlignment {
+  if ([self isEqualToString:@"leading"])
+    return UIStackViewAlignmentLeading;
+  else if ([self isEqualToString:@"top"])
+    return UIStackViewAlignmentTop;
+  else if ([self isEqualToString:@"first-baseline"])
+    return UIStackViewAlignmentFirstBaseline;
+  else if ([self isEqualToString:@"center"])
+    return UIStackViewAlignmentCenter;
+  else if ([self isEqualToString:@"trailing"])
+    return UIStackViewAlignmentTrailing;
+  else if ([self isEqualToString:@"bottom"])
+    return UIStackViewAlignmentBottom;
+  else if ([self isEqualToString:@"last-baseline"])
+    return UIStackViewAlignmentLastBaseline;
+  else
+    return UIStackViewAlignmentFill;
+}
+
+- (UILayoutConstraintAxis)constraintAxis {
+  if ([self isEqualToString:@"horizontal"])
+    return UILayoutConstraintAxisHorizontal;
+  else
+    return UILayoutConstraintAxisVertical;
+}
+
+- (UIStackViewDistribution)stackViewDistribution {
+  if ([self isEqualToString:@"fill-equally"])
+    return UIStackViewDistributionFillEqually;
+  else if ([self isEqualToString:@"fill-proportionally"])
+    return UIStackViewDistributionFillProportionally;
+  else if ([self isEqualToString:@"equal-spacing"])
+    return UIStackViewDistributionEqualSpacing;
+  else
+    return UIStackViewDistributionFill;
 }
 
 @end
